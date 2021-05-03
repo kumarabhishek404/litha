@@ -1,0 +1,122 @@
+.chart__container, .chart__section {
+    background-color: #fff;
+    box-shadow: #00000045 5px 4px 12px 5px;
+    /* height: 300px; */
+}
+.headerMenuButton .MuiPaper-root{
+    top: 60px !important;
+}
+
+.info-box{
+    display: block;
+    min-height: 120px;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 1px 1px #0000001a;
+    border-radius: 2px;
+    margin-bottom: 15px;
+}
+
+.side_nav_item .nav_item_text > span {
+    font-weight: 700;
+    margin-left: 10px;
+}
+.react-datepicker-wrapper {
+    /* border:  2px solid red; */
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.date__picker__container {
+    padding: 0 15px !important;
+}
+.react-datepicker__input-container {
+    width: 220px !important;
+}
+.react-datepicker__input-container input {
+    height: 40px !important;
+    border: 1px solid #cccccc !important;
+    margin: 0 !important;
+    border-radius: 6px !important;
+    padding: 3px 8px !important;
+}
+.css-2b097c-container {
+    width: 220px !important;
+}
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.tableData::-webkit-scrollbar {
+    display: none; /* hide scrollbar for Webkit Browsers */
+}
+
+.analytics__body__header{
+    /* border: 2px solid red; */
+    display: flex;
+    /* flex-direction: column; */
+}
+.analytics__body__header input {
+    width: 100%;
+}
+
+@media only screen and (max-width: 786px) {
+    .analytics__body__header {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    .analytics__body__header {
+        align-items: center;
+    }
+    .picker {
+        padding-right: 0 !important;
+        margin-left: 0 !important;
+    }
+    .date__picker__container {
+        flex-direction: column;
+        padding: 0 0 !important;
+    }
+    .react-datepicker-wrapper {
+        margin-right: 0;
+    }
+}
+
+.MuiListItem-button:hover {
+    background-color: #fff !important;
+}
+
+
+
+/* ////////////////////===========================================//////////////////////////// */
+
+.dashboard__header {
+    padding: 5px;
+    /* border: 2px solid red; */
+    /* color: #224d8a; */
+    /* background-color: #224d8a; */
+}
+.dashboard__logo h3 {
+    color: #224d8a;
+    font-size: 45px;
+    cursor: pointer;
+} 
+.dashboard__items li {
+    color: #000;
+    list-style: none;
+    text-decoration: none;
+}
+
+.header_links {
+    /* border: 2px solid red; */
+    background-color: transparent;
+    width: 570px;
+}
+
+.profile__button {
+    cursor: pointer;
+}
+.profile__button:hover {
+    color: #224d8a;
+}

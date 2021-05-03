@@ -1,0 +1,221 @@
+.login {
+    /* height: 100vh; */
+}
+
+.login::before {
+    content: '';
+    background: url("/images/bg-images/litha-labs.jpeg") no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.5;
+}
+.login__container {
+    background: #fff;
+    /* border: 1px solid gray !important; */
+    height: 500px;
+}
+.login__image {
+    overflow: hidden;
+    height: 100%;
+    width: 400px;
+}
+.login__image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.form__section {
+    width: 400px;
+    position: relative;
+}
+.form {
+    height: 100%;
+    width: 80%;
+    position: relative;
+}
+.input__textField::placeholder {
+    font-weight: 100;
+    opacity: 0.7;
+}
+.input__box {
+    text-align: start;
+    /* border: 2px solid red; */
+}
+.input__box p {
+    font-weight: bold;
+}
+.error__msg {
+    font-size: 10px;
+    font-weight: lighter !important;
+}
+.back__arrow {
+    position: absolute;
+    cursor: pointer;
+    top: 40px;
+    left: 20px;
+}
+.register__btn {
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+}
+
+[type="radio"]:not(:checked), [type="radio"]:checked {
+    opacity: 1;
+}
+
+.form-check-label {
+    font-size: 12px;
+    color: #000;
+}
+
+.input__textField {
+    position: relative;
+    /* border: 2px solid green !important; */
+    width: 300px;
+    height: 45px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    border: 2px solid #e4e4e4;
+    padding: 10px;
+}
+
+.input__textField__code {
+    position: relative;
+    width: 300px;
+    height: 45px;
+    border-radius: 12px;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+.login_btn {
+    width: 100%;
+    height: 50px;
+}
+.register__btn {
+    width: 100px;
+    height: 50px;
+}
+.button {
+    color: #fff !important;
+    border: none;
+    outline: none;
+    background:linear-gradient(90deg, rgb(242 79 229),  rgb(88 76 190));
+    border-radius: 10px;
+}
+.remember__forgetPass {
+    width: 300px;
+    padding-left: 10px !important;
+    margin-bottom: 20%;
+}
+.MuiIconButton-label input {
+    display: none !important;
+}
+.remember__forgetPass a {
+    color: #000;
+    cursor: pointer;
+}
+.remember__forgetPass a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}
+.other_links a {
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 855px) {
+    .login__image {
+        display: none;
+    }
+    /* .form__section::before {
+        content: '';
+        background: url('https://images.pexels.com/photos/2599244/pexels-photo-2599244.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260') no-repeat center center/cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0.5;
+    } */
+}
+
+
+/* Header without links  */
+
+.onlyHeaderLogo {
+    width:  100%;
+    height:70px;
+}
+.onlyHeaderLogo__link {
+    text-decoration: none;
+}
+.onlyHeaderLogo__link__a {
+    color: #fff !important;
+    font-weight: 800;
+    font-size: 20px;
+    text-transform: uppercase;
+    opacity: 1;
+}
+.onlyHeaderLogo__link__a:hover {
+    text-decoration: none;
+}
+
+.country__code__container {
+    position: relative;
+}
+.PhoneInputCountry {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.PhoneInputCountrySelect {
+    border: 2px solid #e4e4e4;
+    border-right: none;
+    width: 85px;
+    height: 100%;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+.PhoneInputCountryIconImg {
+    border: 2px  solid #e4e4e4;
+    width: 67px;
+    position: absolute;
+    left: 0;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+.PhoneInputCountrySelectArrow {
+    cursor: pointer;
+}
+.PhoneInputInput {
+    padding: 10px;
+    border: none;
+    border: 2px solid #e4e4e4;
+    border-bottom-right-radius: 12px;
+    border-top-right-radius: 12px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 216px;
+    height: 100%;
+}
+.email__input__box__loader {
+    position: absolute;
+    right: 30px;
+    top: 53px;
+    width: 40px;
+    height: 40px;
+    z-index: 1;
+}

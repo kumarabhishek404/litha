@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ----------------------NAVBAR---------------------------------- */
+.navbar {
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+}
+
+.navbar a {
+  text-decoration: none;
+}
+
+.menu__bar__icon {
+  display: none;
+  cursor: pointer;
+}
+.navbar ul, .navbar__second ul {
+  font-family: 'Montserrat', sans-serif;
+  width: 600px;
+  list-style: none;
+  color: #b5b3b3;
+}
+.navbar ul li:hover {
+  color: #fff;
+}
+
+.navbar a, .navbar__second a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+
+/* Dropdown Desktop */
+.dropdown, .dropdown_mobile {
+  position: relative;
+}
+
+.dropdown a, .dropdown_mobile a {
+  cursor: pointer;
+}
+
+.nav__item {
+  margin-left: 5px;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 45px;
+  right: -23px;
+  z-index: 4;
+  box-shadow: 0 0px 1px 0 rgb(0 0 0 / 16%), 0 0px 5px 0 #999696;
+}
+
+.dropdownMenu, .dropdownMenu_mobile {
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: #fff;
+  transition: all 5s ease-in 0.2s;
+}
+
+.menu__icon {
+  color: #fff;
+  position: absolute;
+  top: 19px;
+  right: 0px;
+}
+.fa-caret-up:before {
+  font-size: 40px;
+  z-index: 5;
+}
+.paper_drawer {
+  width: 250px;
+}
+.dropdown__item {
+  padding: 10px 45px 10px 15px;
+}
+
+.dropdown__item_mobile {
+  padding: 10px 0px 10px 10px;
+}
+
+.dropdown__item, .dropdown__item_mobile {
+  border: none;
+  background-color: #fff;
+  color: #66615b;
+  clear: both;
+  white-space: nowrap;
+  display: block;
+}
+
+.dropdown__item:hover, .dropdown__item_mobile:hover {
+  background-color: #6ec7e0;
+  color: #fff;
+  width: 100%;
+}
+.dropdown__item_mobile:hover .item__icon_mobile {
+  color: #fff;
+}
+.dropdownMenu_mobile {
+  border-radius: 0px;
+}
+.dropdown__item_mobile {
+  padding: 5px 10px;
+}
+
+.dropdown__item:hover .item__icon {
+  color: #fff;
+}
+.MuiListItemIcon-root {
+  margin-right: -30px;
+}
+.profileName {
+  font-size: 27px !important;
+}
+
+@media only screen and (max-width: 992px ) {
+  .navbar__links {
+    display: none;
+  }
+  .menu__bar__icon {
+    display: block;
+  }
+}
+
+
+/* ----------------------NAVBAR---------------------------------- */
+
+
+
+/* ----------------------LANDING SECTION---------------------------------- */
+
+.landing__section {
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.landing__image {
+  background-position: center center;
+  background-size: cover;
+  object-fit: cover;
+  min-height: 100vh;
+  max-height: 999px;
+  overflow: hidden;
+  position: absolute !important;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.landing__overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.landing__heading {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+h1, h2, p {
+  margin: 30px 0 0;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+}
+
+.landing__heading h1 {
+  font-size: 3.6em;
+  line-height: 1.2;
+}
+
+.landing__heading h2, .about__section h2 {
+  font-size: 2.8em;
+}
+
+@media only screen and (max-width: 900px) {
+  .landing__section h1 {
+    font-size: 8vw;
+  }
+  .landing__heading h2 {
+    font-size: 6vw;
+  }
+}
+
+/* ----------------------LANDING SECTION---------------------------------- */
+
+
+/* ----------------------ABOUT SECTION---------------------------------- */
+
+.about__section {
+  width: 100%;
+  color: #f8f9fa;
+  padding: 70px 0;
+  background-color: var(--app-bg-color);
+}
+
+.about__section p {
+  font-size: 24px;
+  line-height: 1.5em;
+  margin-bottom: 5px;
+}
+
+.about__wrapper {
+  width: 75%;
+}
+
+@media only screen and (max-width:1000px) {
+  .about__wrapper {
+    width: 90%;
+  }  
+}
+
+@media only screen and (max-width: 900px) {
+  .about__wrapper h2 {
+    font-size: 5vw;
+  }
+  .about__wrapper p {
+    font-size: 2.5vw;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+}
+/* ----------------------ABOUT SECTION---------------------------------- */
+
+
+/* ----------------------FOOTER SECTION---------------------------------- */
+
+.footer {
+  background-color: #252422;
+  padding: 30px 0;
+  color: #fff;
+}
+
+.footer__section {
+  font-family: 'Montserrat', sans-serif;
+  width: 75%;
+  color: #777777;
+}
+
+.footer__navbar {
+  width: 180px;
+}
+
+.footer__navbar ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__navbar li {
+  margin-bottom: 3px;
+  line-height: 1.6;
+  opacity: 0.8;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.footer__text {
+  color: #A49E9E;
+  font-size: 0.9em;
+  line-height: 20px;
+  text-align: center;
+}
+
+.heart {
+  color: #EB5E28;
+  animation: heartBeating 1s ease infinite;
+}
+
+@keyframes heartBeating {
+  0% {
+    transform: scale(0.75);
+  }
+  20% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(0.75);
+  }
+  60% {
+    transform: scale(1);
+  }
+  80% {
+    transform: scale(0.75);
+  }
+  100% {
+    transform: scale(0.75);
+  }
+}
+
+@media only screen and (max-width: 630px) {
+  .footer__section {
+    flex-direction: column;
+  }
+  .footer__navbar {
+    margin-bottom: 30px;
+  }
+}
+
+/* ----------------------FOOTER SECTION---------------------------------- */

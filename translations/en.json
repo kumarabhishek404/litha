@@ -1,0 +1,18 @@
+{
+  "welcome": "welcome",
+  "aboutAccessory": "About Assessors",
+  "aboutConversationers": "About Conversationers",
+  "aboutDreamsExpert": "About Dreams Expert",
+  "aboutHumanOrienters": "About Human Orienters",
+  "aboutKnowledgeExpert": "About Knowledge Expert",
+  "aboutLithaLabs": "About Litha Labs",
+  "aboutBunty": "About Bunty",
+  "aboutLithaPsychology": "About Litha Psychology",
+  "aboutLithaTechnology": "About Litha Technology",
+  "signIn": "SignIn",
+  "workingWithAssessors": "Working With Assessors",
+  "workingWithOrienters": "Working With Orienters",
+
+  "PhqBotMsg1": "Hello! I'm your PHQ-2 Assessor, a helpful Assessor who contributes to your psychological well-being. My task is to analyze your answers and help you with the diagnosis and treatment of any mental health issues.",
+  "PhqBotMsg2": "Is it OK if I ask you just 2 questions to make the evaluation?"
+}

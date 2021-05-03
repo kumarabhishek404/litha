@@ -1,0 +1,141 @@
+@import './variables.scss';
+
+
+.dialog-btn{
+    .MuiButton-label{
+        font-weight: bold;
+    }
+}
+
+.manual-dialog{
+    .MuiDialog-paperScrollPaper{
+        width: 100%;
+      }
+}
+
+.cancel-btn{
+    background-color: tomato !important;
+}
+.cropper{
+    background-color: ghostwhite;
+    text-align: center;
+}
+
+/* sidebar  */
+.sidebar.nav__link{
+    text-decoration: none;
+}
+.sidebar.nav__link:hover{
+    color: #e4e4e4 !important;
+    text-decoration: none;
+}
+.sidebar.nav__icon{
+    color: #e4e4e4 !important;
+}
+.side_nav_item:hover {
+    background-color: #064c951f !important;
+}
+
+.side_nav_item.active{
+    // background: $app-color !important;
+    .sidebar.nav__link{
+        color: $light !important
+    }
+    .sidebar.nav__icon{
+        color: #fff !important;
+    }
+    .nav_item_text>span{
+        font-weight: bold;
+    }
+
+}
+
+
+// css of header 
+
+.grow{
+    // border: 2px solid red;
+    flex-grow: 1;
+}
+
+.title{
+    // border: 2px solid red;
+    display: none;
+}
+
+@media only screen and (min-width: 576px) {
+    .title {
+        display: block;
+    }
+}
+
+.menuButton {
+    // border: 2px solid red !important;
+    margin-right: 20px !important;
+}
+.search {
+    position: relative;
+//   borderRadius: theme.shape.borderRadius,
+//   backgroundColor: fade(theme.palette.common.white, 0.15),
+//   '&:hover': {
+//     backgroundColor: fade(theme.palette.common.white, 0.25),
+//   },
+//   marginRight: theme.spacing(2),
+//   margin-left: 0;
+//   width: 100%;
+//   [theme.breakpoints.up('sm')]: {
+        
+// }
+}
+@media only screen and (min-width: 576px) {
+    .search {
+    margin-left:30px;
+    width: auto;
+    }
+}
+
+.searchIcon {
+//   padding: theme.spacing(0, 2),
+    height: 100%;
+    position: absolute;
+    pointer-events: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inputRoot {
+    color: inherit;
+}
+.inputInput{
+//   padding: theme.spacing(1, 1, 1, 0),
+    // vertical padding + font size from searchIcon
+//   paddingLeft: `calc(1em + ${theme.spacing(4)}px)`,
+//   transition: theme.transitions.create('width'),
+    width: 100%;
+}
+@media only screen and (min-width: 768px) {
+    .inputInput {
+        // marginLeft: theme.spacing(3),
+        width: 20ch;
+    }
+}
+
+.sectionDesktop {
+    // border: 2px solid red;
+    display: none;
+}
+@media only screen and (min-width: 960px) {
+    .sectionDesktop {
+        display: flex;
+    }
+}
+
+.sectionMobile {
+    //   border: 2px solid red;
+    display: flex;
+}
+@media only screen and (min-width: 960px) {
+    .sectionMobile {
+        display: none;
+    }
+}

@@ -1,0 +1,42 @@
+@import './variables.scss';
+@import './home.scss';
+
+
+button{
+    outline: none !important;
+}
+.backNavMenu {
+    // background-color: transparent !important;
+    width: 75vw !important;
+    max-width: 400px !important;
+    float: right !important;
+    color: inherit !important;
+}
+.backNavMenu > div {
+    width: 75vw !important;
+    max-width: 400px !important;
+}
+
+.text-start{
+    text-align: start !important;
+}
+
+button.btn-default:hover {
+    color: #fff !important;
+    font-weight: bold;
+    background-color: $app-color;
+}
+button.btn-default{
+    color: #fff !important;
+    font-weight: bold;
+    // background-color: $app-color;
+    background-color: #da2f2f;
+    border: none;
+    outline: none;
+    box-shadow: 2px 3px 7px 0rem #fc024d85 !important;
+}
+button.btn.focus, .btn:focus {
+    box-shadow: 2px 3px 7px 0rem #fc024d85 !important;
+}
+
+
