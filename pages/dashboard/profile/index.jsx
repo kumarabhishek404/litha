@@ -1,51 +1,3 @@
-// import dynamic from 'next/dynamic';
-// import { useRouter } from 'next/router';
-// import React, { useEffect } from 'react'
-// import { useSelector } from 'react-redux';
-// import ProfileIntro from '../../components/profileIntro';
-// import Link from 'next/link';
-
-// import ProfileLayout from '../../components/Layout/profileLayout';
-
-// const Head = dynamic(() => import("../../components/html/head"), { ssr: false });
-// function UserProfile() {
-
-//     const route = useRouter()
-//     const auth = useSelector(state => state?.profile?.auth)
-//     console.log(auth);
-
-//     useEffect(() => {
-//         // if (route.pathname == '/profile#profile') {
-//         //     route.push('/profile/profile')
-//         // }
-//         // else if(route.pathname == '/profile#dashboard')
-//         //     route.push('/profile/setting')
-//         // }
-//         // else {
-
-//         // }
-//     }, [])
-
-//     useEffect(() => {
-//         if (route.pathname == '/profile') {
-//             route.push('/profile/profile')
-//         }
-//     }, [])
-
-//     useEffect(() => {
-//         auth
-//             ? <></>
-//             : route.push('/account/login')
-//     }, [])
-
-//     return (
-//         <></>
-//     )
-// }
-
-// export default UserProfile;
-
-
 import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
@@ -54,6 +6,7 @@ import Profile from '../../../components/profile/index';
 import { Toast } from '../../../lib/global';
 import { getCookie } from '../../../lib/session';
 import { getProfileData } from '../../../services/auth.service';
+import Drag from '../../../components/DragAndDrop/index';
 
 function profile() {
 
@@ -130,7 +83,8 @@ function profile() {
     }, [])
 
     return (
-        <DashboardLayout>
+            <DashboardLayout>
+                <Drag />
             <Profile />
         </DashboardLayout>
     )

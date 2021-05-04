@@ -31,10 +31,10 @@ const headerList = (color) => {
             path: 'profile'
         },
         {
-            title: 'My Assissment',
+            title: 'My Assessments',
             icon: <AssignmentIcon style={{color}} />,
             home: true,
-            path: 'assissment'
+            path: 'assessments'
         }
     ]
 }

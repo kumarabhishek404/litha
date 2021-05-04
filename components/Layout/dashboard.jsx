@@ -68,7 +68,7 @@ const DashboardLayout = (props) => {
                             <li className='m-0 mr-3'>Welcome Abhishek</li>
                             <li className='m-0 mr-3 d-flex flex-column'>LoginIP: <p className='m-0 p-0'>1234567890</p></li>
                             <li className='m-0 mr-3 d-flex flex-column'>LoginTime:<p className='m-0 p-0'>03/05/2021 07:40:23</p></li>
-                            <li className='m-0 mr-3 profile__button'>
+                            <li className='m-0 mr-3 profile__button border'>
                                 <h3 className='m-0 p-0'>Logout</h3>
                             </li>
                             <li className='m-0 mr-3 profile__button'>
